@@ -1,0 +1,44 @@
+# Docker Image Optimizer 配置文件
+
+analysis:
+  # 检测规则开关
+  rules:
+    large_base_image: true
+    cache_not_cleaned: true
+    no_multistage: true
+    unnecessary_files: true
+    no_dockerignore: true
+    run_not_merged: true
+    no_buildkit_cache: true
+    latest_tag: true
+    root_user: true
+
+  # 最大层数警告阈值
+  max_layers_warning: 20
+
+  # 估算大小阈值 (MB)
+  size_warning_mb: 500
+
+# 输出配置
+output:
+  default_format: terminal  # terminal / markdown / html
+  show_suggestions: true
+  show_line_numbers: true
+
+# API 服务配置
+api:
+  host: "0.0.0.0"
+  port: 8000
+  cors_origins: ["*"]
+
+# 精简镜像映射 (可自定义)
+slim_images:
+  python:3.11: "python:3.11-slim"
+  python:3.12: "python:3.12-slim"
+  node:18: "node:18-slim"
+  node:20: "node:20-slim"
+  node:22: "node:22-slim"
+  ruby:3.2: "ruby:3.2-slim"
+  openjdk:17: "eclipse-temurin:17-jre-alpine"
+  golang:1.21: "golang:1.21-alpine"
+  golang:1.22: "golang:1.22-alpine"
