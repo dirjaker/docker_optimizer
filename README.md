@@ -1,3 +1,20 @@
+<div align="center">
+
+# 🐳 Docker Optimizer
+
+### Docker 镜像优化分析工具
+
+[![优化](https://img.shields.io/badge/优化-5-blue?style=flat-square)]()
+[![检测](https://img.shields.io/badge/检测-8-green?style=flat-square)]()
+[![框架](https://img.shields.io/badge/框架-Click+Rich-orange?style=flat-square)]()
+[![更新](https://img.shields.io/badge/更新-2025.06-red?style=flat-square)]()
+
+*镜像层分析 · 多阶段构建建议 · 安全扫描 · 体积优化 · CI 集成*
+
+</div>
+
+---
+
 # Docker Image Optimizer
 
 分析 Docker 镜像层，检测问题，给出优化建议，帮助减小镜像体积。
@@ -128,3 +145,4 @@ docker_optimizer/
 │   └── good.Dockerfile
 └── README.md
 ```
+
