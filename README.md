@@ -146,3 +146,35 @@ docker_optimizer/
 └── README.md
 ```
 
+
+## Web Dashboard
+
+A visual dashboard for Dockerfile analysis and optimization.
+
+```bash
+python src/web/app.py
+```
+
+Dashboard features:
+- Paste Dockerfile content and analyze in one click
+- Visual issue detection with severity levels
+- Optimization suggestions with before/after examples
+- Auto-generated optimized Dockerfile
+- Markdown and HTML report generation
+
+Access at: `http://localhost:8080`
+
+## macOS Application
+
+A native macOS application via py2app.
+
+```bash
+python packaging/py2app_setup.py py2app
+# Output: dist/Docker Optimizer.app
+```
+
+Features:
+- Load Dockerfile from disk
+- Inline analysis with detailed results
+- Start/stop web server
+- Activity log
