@@ -1,180 +1,57 @@
-<div align="center">
+# Docker 镜像优化器
 
-# 🐳 Docker Optimizer
+> Docker 镜像优化器：层分析、问题检测、优化建议、Dockerfile 重写
 
-### Docker 镜像优化分析工具
-
-[![优化](https://img.shields.io/badge/优化-5-blue?style=flat-square)]()
-[![检测](https://img.shields.io/badge/检测-8-green?style=flat-square)]()
-[![框架](https://img.shields.io/badge/框架-Click+Rich-orange?style=flat-square)]()
-[![更新](https://img.shields.io/badge/更新-2025.06-red?style=flat-square)]()
-
-*镜像层分析 · 多阶段构建建议 · 安全扫描 · 体积优化 · CI 集成*
-
-</div>
+`Python` `FastAPI` `Docker`
 
 ---
 
-# Docker Image Optimizer
+## ✨ 功能特性
 
-分析 Docker 镜像层，检测问题，给出优化建议，帮助减小镜像体积。
-
-## ✨ 特性
-
-- **Dockerfile 解析** - 完整解析 Dockerfile 指令和参数
-- **问题检测** - 自动检测 10+ 种常见优化问题
-- **优化建议** - 生成具体的优化建议和示例代码
-- **Dockerfile 重写** - 自动生成优化后的 Dockerfile
-- **多格式报告** - 支持终端/Markdown/HTML 输出
-- **API 服务** - FastAPI 在线分析接口
+- 镜像层分析
+- 问题检测
+- 优化建议
+- Dockerfile重写
+- 体积对比
 
 ## 🚀 快速开始
 
-### 安装
-
 ```bash
+# 克隆项目
+git clone https://github.com/dirjaker/docker_optimizer.git
 cd docker_optimizer
+
+# 创建虚拟环境
+conda create -n docker_optimizer python=3.12 -y
+conda activate docker_optimizer
+
+# 安装依赖
 pip install -r requirements.txt
+
+# 运行项目
+python main.py
 ```
-
-### CLI 使用
-
-```bash
-# 分析 Dockerfile（终端输出）
-python cli.py analyze Dockerfile
-
-# 生成 Markdown 报告
-python cli.py analyze Dockerfile -f markdown -o report.md
-
-# 生成 HTML 报告
-python cli.py analyze Dockerfile -f html -o report.html
-
-# 生成优化后的 Dockerfile
-python cli.py analyze Dockerfile --rewrite -o Dockerfile.optimized
-
-# 启动 API 服务
-python cli.py serve --port 8000
-```
-
-### API 使用
-
-```bash
-# 启动服务
-python cli.py serve
-
-# 分析 Dockerfile
-curl -X POST http://localhost:8000/analyze \
-  -H "Content-Type: application/json" \
-  -d '{"dockerfile_content": "FROM python:3.11\nCOPY . .\nRUN pip install .", "format": "markdown"}'
-
-# 上传文件分析
-curl -X POST http://localhost:8000/analyze/file \
-  -F "file=@Dockerfile"
-```
-
-## 🔍 检测规则
-
-| 规则 | 严重度 | 说明 |
-|------|--------|------|
-| 大基础镜像 | ⚠️ WARNING | 检测可替换的精简镜像 |
-| 未清理缓存 | ⚠️ WARNING | apt/pip 缓存未清理 |
-| 未多阶段构建 | ⚠️ WARNING | 检测编译工具但无多阶段构建 |
-| 无 .dockerignore | 🔵 INFO | 缺少 .dockerignore 文件 |
-| RUN 未合并 | 🔵 INFO | 多个连续 RUN 指令未合并 |
-| 使用 latest 标签 | ⚠️ WARNING | 基础镜像使用 latest 标签 |
-| 以 root 运行 | 🔵 INFO | 未指定非 root 用户 |
-| pip 未禁用缓存 | 🔵 INFO | pip install 未使用 --no-cache-dir |
-
-## 📊 优化示例
-
-### 优化前
-
-```dockerfile
-FROM python:3.11
-WORKDIR /app
-COPY . .
-RUN apt-get update
-RUN apt-get install -y curl
-RUN pip install -r requirements.txt
-EXPOSE 8000
-CMD ["python", "app.py"]
-```
-
-### 优化后
-
-```dockerfile
-FROM python:3.11-slim AS builder
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-COPY . .
-
-FROM python:3.11-slim
-WORKDIR /app
-COPY --from=builder /app .
-RUN useradd -m appuser
-USER appuser
-EXPOSE 8000
-CMD ["python", "app.py"]
-```
-
-**预计节省**: 60-80% 基础镜像体积
-
-## 🛠 技术栈
-
-- **Python** - Dockerfile 解析和逻辑
-- **FastAPI** - Web API 服务
-- **Rich** - 终端美化输出
-- **PyYAML** - 配置文件解析
-- **Pydantic** - 数据验证
 
 ## 📁 项目结构
 
 ```
 docker_optimizer/
-├── models.py          # 数据模型
-├── image_analyzer.py  # Dockerfile 分析器
-├── optimizer.py       # 优化建议生成器
-├── reporter.py        # 报告生成器
-├── api.py             # FastAPI 服务
-├── cli.py             # CLI 入口
-├── config.yaml        # 配置文件
-├── requirements.txt   # 依赖
-├── examples/          # 示例 Dockerfile
-│   ├── bad.Dockerfile
-│   └── good.Dockerfile
+├── ...
 └── README.md
 ```
 
+## 🛠️ 技术栈
 
-## Web Dashboard
+Python, FastAPI, Docker
 
-A visual dashboard for Dockerfile analysis and optimization.
+## 📝 标签
 
-```bash
-python src/web/app.py
-```
+`docker` `optimization` `image` `devops` `python` `fastapi`
 
-Dashboard features:
-- Paste Dockerfile content and analyze in one click
-- Visual issue detection with severity levels
-- Optimization suggestions with before/after examples
-- Auto-generated optimized Dockerfile
-- Markdown and HTML report generation
+## 📄 许可证
 
-Access at: `http://localhost:8080`
+MIT License
 
-## macOS Application
+---
 
-A native macOS application via py2app.
-
-```bash
-python packaging/py2app_setup.py py2app
-# Output: dist/Docker Optimizer.app
-```
-
-Features:
-- Load Dockerfile from disk
-- Inline analysis with detailed results
-- Start/stop web server
-- Activity log
+🔗 **GitHub**: [dirjaker/docker_optimizer](https://github.com/dirjaker/docker_optimizer)
