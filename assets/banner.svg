@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="50%" style="stop-color:#111111"/>
+      <stop offset="100%" style="stop-color:#0d0d0d"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="20%" cy="60%" r="35%">
+      <stop offset="0%" style="stop-color:#2496ED;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#2496ED;stop-opacity:0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="35%" cy="30%" r="25%">
+      <stop offset="0%" style="stop-color:#2496ED;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#2496ED;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="400" fill="url(#bg)"/>
+  <rect width="1200" height="400" fill="url(#glow1)"/>
+  <rect width="1200" height="400" fill="url(#glow2)"/>
+  <circle cx="177" cy="343" r="3.4818225983566484" fill="white" opacity="0.3"/>
+  <circle cx="489" cy="178" r="1.477171458966787" fill="white" opacity="0.6"/>
+  <circle cx="54" cy="360" r="1.0073170225544" fill="white" opacity="0.7"/>
+  <circle cx="175" cy="47" r="3.696065976956997" fill="white" opacity="0.4"/>
+  <circle cx="107" cy="243" r="3.6934146979892644" fill="white" opacity="0.4"/>
+  <circle cx="550" cy="201" r="3.4031768723613487" fill="white" opacity="0.3"/>
+  <circle cx="352" cy="163" r="2.5864823748246755" fill="white" opacity="0.9"/>
+  <circle cx="368" cy="314" r="3.3582800072573056" fill="white" opacity="0.7"/>
+  <circle cx="598" cy="96" r="1.8095432916914649" fill="white" opacity="0.4"/>
+  <circle cx="324" cy="350" r="3.679062360627303" fill="white" opacity="0.6"/>
+  <circle cx="564" cy="239" r="1.5361177575918765" fill="white" opacity="0.8"/>
+  <circle cx="47" cy="140" r="2.8287982533254965" fill="white" opacity="0.3"/>
+  <circle cx="605" cy="300" r="1.306053843931579" fill="white" opacity="0.4"/>
+  <circle cx="121" cy="181" r="3.54787236101463" fill="white" opacity="0.2"/>
+  <circle cx="271" cy="174" r="2.270631055764826" fill="white" opacity="0.5"/>
+  <circle cx="348" cy="303" r="3.364408961264526" fill="white" opacity="0.7"/>
+  <circle cx="475" cy="231" r="2.5989561972983193" fill="white" opacity="0.3"/>
+  <circle cx="169" cy="100" r="3.191031911924245" fill="white" opacity="0.4"/>
+  <circle cx="153" cy="199" r="3.07875977067811" fill="white" opacity="0.2"/>
+  <circle cx="235" cy="363" r="1.7708962546738793" fill="white" opacity="0.7"/>
+  <circle cx="388" cy="217" r="1.152310810695" fill="white" opacity="0.2"/>
+  <circle cx="415" cy="158" r="3.4284061257571867" fill="white" opacity="0.4"/>
+  <circle cx="304" cy="331" r="3.061390611643267" fill="white" opacity="0.6"/>
+  <circle cx="264" cy="189" r="3.7549799170280527" fill="white" opacity="0.8"/>
+  <circle cx="517" cy="57" r="2.041922348048511" fill="white" opacity="0.3"/>
+  <circle cx="616" cy="342" r="1.7428879897813516" fill="white" opacity="0.7"/>
+  <circle cx="539" cy="132" r="1.0902010988267246" fill="white" opacity="0.3"/>
+  <circle cx="286" cy="215" r="2.1859852317870256" fill="white" opacity="0.5"/>
+  <circle cx="102" cy="246" r="2.40208584443705" fill="white" opacity="0.2"/>
+  <circle cx="510" cy="353" r="1.7719207979143416" fill="white" opacity="0.7"/>
+  <circle cx="480" cy="258" r="1.6694366588009268" fill="white" opacity="0.5"/>
+  <circle cx="414" cy="98" r="2.2899843763583307" fill="white" opacity="0.3"/>
+  <circle cx="58" cy="112" r="2.40341832186377" fill="white" opacity="0.8"/>
+  <circle cx="40" cy="346" r="3.1207052916887768" fill="white" opacity="0.7"/>
+  <circle cx="382" cy="367" r="1.3311213299873978" fill="white" opacity="0.8"/>
+  <circle cx="245" cy="69" r="3.5321312665788653" fill="white" opacity="0.7"/>
+  <circle cx="545" cy="343" r="3.8186108334035094" fill="white" opacity="0.8"/>
+  <circle cx="71" cy="158" r="2.0841582018109652" fill="white" opacity="0.3"/>
+  <circle cx="465" cy="109" r="3.1327807144587094" fill="white" opacity="0.5"/>
+  <circle cx="228" cy="257" r="3.7391670009890277" fill="white" opacity="0.6"/>
+  <circle cx="234" cy="163" r="1.7515005670919241" fill="white" opacity="0.9"/>
+  <circle cx="212" cy="356" r="2.7550620855732824" fill="white" opacity="0.3"/>
+  <circle cx="75" cy="210" r="1.5404101460721105" fill="white" opacity="0.4"/>
+  <circle cx="322" cy="204" r="2.687888174678237" fill="white" opacity="0.9"/>
+  <circle cx="466" cy="364" r="2.77028064941337" fill="white" opacity="0.7"/>
+  <circle cx="283" cy="336" r="1.942517217670233" fill="white" opacity="0.5"/>
+  <circle cx="235" cy="187" r="1.567040169414148" fill="white" opacity="0.6"/>
+  <circle cx="610" cy="213" r="3.2079213250930754" fill="white" opacity="0.3"/>
+  <circle cx="202" cy="277" r="1.1039608498010502" fill="white" opacity="0.3"/>
+  <circle cx="234" cy="42" r="2.575880034516949" fill="white" opacity="0.3"/>
+  <circle cx="606" cy="291" r="3.8195578067074307" fill="white" opacity="0.7"/>
+  <circle cx="398" cy="361" r="2.027662884391738" fill="white" opacity="0.5"/>
+  <circle cx="317" cy="353" r="2.097238196219985" fill="white" opacity="0.4"/>
+  <circle cx="189" cy="297" r="1.9000375068503494" fill="white" opacity="0.5"/>
+  <circle cx="56" cy="101" r="2.667997260537801" fill="white" opacity="0.7"/>
+  <circle cx="168" cy="266" r="3.4845307839593147" fill="white" opacity="0.5"/>
+  <circle cx="364" cy="245" r="1.337169193427095" fill="white" opacity="0.6"/>
+  <circle cx="125" cy="139" r="2.5072366032720783" fill="white" opacity="0.5"/>
+  <circle cx="411" cy="307" r="2.31063917489702" fill="white" opacity="0.9"/>
+  <circle cx="415" cy="94" r="3.481686750438761" fill="white" opacity="0.4"/>
+  <line x1="581" y1="165" x2="661" y2="228" stroke="white" stroke-width="0.5" opacity="0.15"/>
+  <line x1="498" y1="180" x2="575" y2="184" stroke="white" stroke-width="0.5" opacity="0.15"/>
+  <line x1="159" y1="101" x2="253" y2="40" stroke="white" stroke-width="0.5" opacity="0.15"/>
+  <line x1="463" y1="38" x2="528" y2="15" stroke="white" stroke-width="0.5" opacity="0.15"/>
+  <line x1="151" y1="55" x2="214" y2="10" stroke="white" stroke-width="0.5" opacity="0.15"/>
+  <line x1="441" y1="360" x2="482" y2="384" stroke="white" stroke-width="0.5" opacity="0.15"/>
+  <line x1="188" y1="132" x2="265" y2="81" stroke="white" stroke-width="0.5" opacity="0.15"/>
+  <line x1="366" y1="98" x2="482" y2="78" stroke="white" stroke-width="0.5" opacity="0.15"/>
+  <line x1="69" y1="246" x2="144" y2="272" stroke="white" stroke-width="0.5" opacity="0.15"/>
+  <line x1="199" y1="315" x2="314" y2="368" stroke="white" stroke-width="0.5" opacity="0.15"/>
+  <line x1="130" y1="290" x2="192" y2="217" stroke="white" stroke-width="0.5" opacity="0.15"/>
+  <line x1="585" y1="326" x2="699" y2="332" stroke="white" stroke-width="0.5" opacity="0.15"/>
+  <line x1="599" y1="69" x2="646" y2="65" stroke="white" stroke-width="0.5" opacity="0.15"/>
+  <line x1="353" y1="143" x2="463" y2="130" stroke="white" stroke-width="0.5" opacity="0.15"/>
+  <line x1="299" y1="127" x2="351" y2="108" stroke="white" stroke-width="0.5" opacity="0.15"/>
+
+  <line x1="650" y1="60" x2="650" y2="340" stroke="white" stroke-width="0.5" opacity="0.15"/>
+  <text x="680" y="155" font-family="'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-size="88" font-weight="800" fill="white" letter-spacing="8">DOCKER OPTIMIZER</text>
+  <text x="680" y="200" font-family="'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-size="18" font-weight="400" fill="white" opacity="0.85" letter-spacing="3">DOCKER OPTIMIZER</text>
+  <text x="680" y="230" font-family="'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif" font-size="16" font-weight="300" fill="white" opacity="0.6" letter-spacing="2">层分析 · 问题检测 · 优化建议 · Dockerfile 重写 · 安全扫描</text>
+  <text x="680" y="280" font-family="'SF Mono','Fira Code','Consolas',monospace" font-size="13" fill="white" opacity="0.45" letter-spacing="1.5">Python · Click · Docker</text>
+  <line x1="680" y1="310" x2="1140" y2="310" stroke="white" stroke-width="0.5" opacity="0.15"/>
+  <text x="680" y="340" font-family="'SF Mono','Fira Code','Consolas',monospace" font-size="11" fill="white" opacity="0.35" letter-spacing="1">DOCKER · OPTIMIZATION · DEVOPS · SECURITY</text>
+</svg>
